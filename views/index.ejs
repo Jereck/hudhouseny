@@ -1,26 +1,74 @@
 <% include partials/header %>
 
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="/images/fly-over.jpg">
-    </div>
-</div>
-<div class="section white">
-    <div class="row container center-align">
-        <h1 class="header">The Hundson House</h1>
-        <h5 class="grey-text text-darken-3 lighten-3">Luxury Accommodations Year-Round</h5>
-        <p>
-            The Hudson House is an authentic mission style tourist home that has been serving Adirondack vacation guests for over 80 years. 
-            A large Garnet fireplace anchors the main family room. Seven bedrooms, three full bathrooms, a large gourmet kitchen and multiple 
-            spacious gathering rooms can easily accommodate 17 people. 
-            The home has been fully restored to its original charm and warmth. All the finishes have been updated and furnishings have all been replaced.
-        </p>
-    </div>
-</div>
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="images/cabin.jpg">
+<% include partials/_topbar %>
+
+<% include partials/_navbar %>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 class="display-2">The Hudson House</h1>
+        <p class="lead">Luxury Accomodations Year-Round</p>
     </div>
 </div>
 
+<section id="about" class="container my-5">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <figure class="figure">
+                <img src="/images/Set018.jpg" alt="Hundson House Day Time Front" class="figure-img img-fluid rounded">
+            </figure>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="bordered">
+                <p class="lead">
+                    The Hudson House is an authentic mission style tourist home that has been serving Adirondack vacation guests for over 80 years. 
+                    A large Garnet fireplace anchors the main family room. Seven bedrooms, three full bathrooms, a large gourmet kitchen and multiple 
+                    spacious gathering rooms can easily accommodate 17 people. 
+                    The home has been fully restored to its original charm and warmth. All the finishes have been updated and furnishings have all been replaced.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="secondary-links" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <figure class="figure">
+                    <a href="">
+                        <img src="/images/Set114.jpg" alt="" class="figure-img img-fluid rounded shadow">
+                        <button class="btn btn-success btn-overlay" type="button">Photos</button>
+                    </a>
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <figure class="figure">
+                    <a href="">
+                        <img src="/images/Set110.jpg" alt="" class="figure-img img-fluid rounded shadow">
+                        <button class="btn btn-success btn-overlay" type="button">Amenities</button>
+                    </a>
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <figure class="figure">
+                    <a href="">
+                        <img src="/images/Set085.jpg" alt="" class="figure-img img-fluid rounded shadow">
+                        <button class="btn btn-success btn-overlay" type="button">Rates</button>
+                    </a>
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <figure class="figure">
+                    <a href="">
+                        <img src="/images/Set012.jpg" alt="" class="figure-img img-fluid rounded shadow">
+                        <button class="btn btn-success btn-overlay" type="button">Local</button>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
 <% include partials/footer %>
