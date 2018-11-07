@@ -1,6 +1,8 @@
 const   express   = require('express'),
         app       = express();
 
+var port = process.env.PORT || 3000;
+
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/views'));
 
@@ -14,6 +16,6 @@ app.get('/amenities', (req, res) => {
     res.render('amenities');
 });
 
-app.listen(3000, () => {
-    console.log('Server is listening on port 3000');
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
 });
