@@ -1,4 +1,5 @@
-$(document).ready(function(){
-    $('.parallax').parallax();
-    $('.sidenav').sidenav();
+// Initialize a perfundo Lightbox.
+perfundo('.perfundo', {
+    disableHistory: true,
+    swipe: true
 });

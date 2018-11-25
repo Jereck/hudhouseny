@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<section id="photos" class="container">
+    <h1 class="display-1">Photos</h1>
+
+    <div class="gallery">
+        <% photos.forEach(function(photo) { %>
+            <div class="perfundo js-perfundo">
+                <a href="#perfundo-img1" class="perfundo__link js-perfundo-link">
+                    <div class="item">
+                        <img src="<%= photo.url %>" alt="Demo Image">
+                    </div>
+                </a>
+                <div id="perfundo-img1" class="perfundo__overlay fadeIn js-perfundo-overlay">
+                    <figure class="perfundo__content perfundo__figure">
+                        <img src="<%= photo.url %>" alt="Demo Image">
+                        <div class="perfundo__image" style="width: 800px; padding-top: 66.25%; background-image: url('<%= photo.url %>');"></div>
+                    </figure>
+                    <a href="#perfundo-untarget" class="perfundo__close perfundo__control js-perfundo-close">Close</a>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+</section>
+
+<% include partials/footer %>
