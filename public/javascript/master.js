@@ -1,5 +1,6 @@
 // Initialize a perfundo Lightbox.
 perfundo('.perfundo', {
     disableHistory: true,
-    swipe: true
+    swipe: true,
+    keybaord: true,
 });
